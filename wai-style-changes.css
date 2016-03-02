@@ -1,0 +1,157 @@
+#tagline {
+  display: block;
+  overflow: hidden;
+  /* Let height include floats */
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background: #993300;
+  min-height: 23px;
+  /* Height of rounded corner */
+  border-radius: 0 28px 0 0;
+}
+#tagline p {
+  margin: 0;
+  padding: 0.3em 20px 0.3em 0.3em;
+  /* 20px makes room for rounded corner */
+  text-align: right;
+}
+.status {
+  padding: .25em;
+  margin-bottom: -1.5em;
+}
+.status h3, .status p {
+  display: inline;
+  color: inherit;
+  font-size: 1em;
+}
+.draft .status {
+  background-color: #CFC;
+}
+.editors-draft .status {
+  background-color: #FCC;
+}
+#nav {
+  float: none;
+  width: auto;
+}
+#main {
+  margin: 0;
+}
+
+#main h2 {
+  margin-top: 3em;
+}
+
+p.totop {
+  background-color: inherit;
+  display: auto;
+}
+
+p.totop a {
+  background: #eff5fb url("http://www.w3.org/Icons/topofpage.png") no-repeat scroll 0.5em center;
+  display: inline-block;
+  padding: 0.2em 0.7em 0.3em 1.8em;
+  border-radius: 2px;
+	text-decoration: none;
+}
+
+p.totop a:hover, p.totop a:focus {
+	text-decoration: underline;
+}
+
+.btn {
+  background: linear-gradient(to bottom, #e6e6e6, #ccc);
+  color: #333;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 244.44444%;
+  padding: .5em .75em;
+  text-decoration: none;
+  white-space: nowrap;
+  border-color: #ccc;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: .25em;
+}
+.btn:hover, .btn:focus {
+  color: #333;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #ccc, #b3b3b3);
+}
+
+.contribute {
+  box-sizing: border-box;
+  border: 1px solid #666 !important;
+  background-color: #fff7f0;
+  border-radius: .5em;
+  padding: 1em;
+  margin: 1em auto;
+  width: 90%;
+}
+.contribute .heading {
+  color: #333333 !important;
+  border-bottom: none !important;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.contribute .heading + p {
+  margin-top: 0.5em;
+}
+.contribute .buttons {
+  text-align: center;
+  margin-top: 1em;
+  padding: .5em 0 0;
+  border-top: 1px solid #ccc;
+  line-height: 300%;
+}
+    
+@media screen and (min-width: 43em) {
+  #nav {
+    float: left;
+    width: 24%;
+  }
+  #main {
+    margin: 0 0 0 27%;
+  }
+  .contribute {
+    width: 65%;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+  header img {
+    max-width: none;
+  }
+  header #masthead {
+    margin: 0;
+    float: left;
+  }
+  header #masthead > p, header #masthead p {
+    margin: 0;
+    width: auto;
+    border-right: none;
+  }
+  header #tagline {
+    background: none;
+    color: #333;
+  }
+  header #tagline p {
+    text-align: left;
+  }
+  #main {
+    margin: 0;
+  }
+  #controls, #nav, nav.section, .contribute, .permalink {
+    display: none;
+  }
+  .color-alone img {
+    width: 150px;
+    height: 150px;
+  }
+}
