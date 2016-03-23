@@ -18,10 +18,37 @@
 		<style type="text/css" xml:space="preserve">
 		<!--
 		.style1 {font-weight: bold}
-		
+
+		#main h3 {
+			color: black;
+		}
+
+		.video {
+			margin: 1em 0;
+		}
 		video {
 			width: 80%;
-			margin: 1em 0;
+		}
+		.video .alternative-formats {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.video .alternative-formats li {
+			display: inline;
+		}
+		.video .alternative-formats li:after {
+			content: '|';
+			margin-left: 0.5em;
+			margin-right: 0.2em;
+		}
+		.video .alternative-formats li:last-of-type:after {
+			content: '';
+		}
+		.video .audio-description {
+			width: 1.5em;
+			height: 1.5em;
+			vertical-align: bottom;
 		}
 		-->
 	</style>
@@ -82,13 +109,28 @@
 		<div id="skipwrapper"><a id="skip" shape="rect" name="skip">-</a></div>
 		<h1>Web Accessibility: Impact and Benefits</h1>
 		<p>This page will contain short examples of web accessibility features. Each example will be in text, accompanied by a short video, and with links to further reading and resources (eg. <a href="http://www.w3.org/WAI/gettingstarted/tips/">Getting Started Tips</a>). Each example shows why a particular accessibility feature - such as video captions - is essential to people with disabilities, and the broader benefits it has for many more. The examples should be compelling and convincing that accessibility is important for your own website, not only "for the sake of these others".</p>
-		
-		<h2>Sample video to test controls</h2>
-		<video controls>
-			<source src="sample.mp4" type="video/mp4">
-		  <track src="sample-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-			<p>Unfortunately, your browser does not support the video element. You may have more success with a more recent browser version</p>
-		</video>
+
+		<article>
+			<h2>Sample video</h2>
+			<div class="video">
+				<video controls>
+					<source src="sample.mp4" type="video/mp4">
+				  <track src="sample-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
+					<p>Unfortunately, your browser does not support the video element. You may have more success with a more recent browser version</p>
+				</video>
+				<ul class="alternative-formats">
+					<li><a href="#">Transcript</a></li>
+					<li><a href="#"><img class="audio-description" alt="Video with audio description" src="img/audio-description.svg"></a></li>
+				</ul>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<h3>For more information</h3>
+			<ul>
+				<li><a href="#">Ullamco laboris</a></li>
+				<li><a href="#">Ut enim ad minim</a></li>
+				<li><a href="#">Duis aute irure</a></li>
+			</ul>
+		</article>
 		<h2>Video Captions</h2>
 		<p>@@@ Brief text explaining the impact and benefits of Video Captions.</p>
 		<p>Embedded video - <a href="script1.html">Script 1: Video Captions</a></p>
