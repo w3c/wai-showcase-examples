@@ -3,26 +3,26 @@
 <head>
   <meta charset="utf-8">
 	<title>Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone</title>
+	<script src="lib/modernizr.custom.js"></script>
   <meta name="viewport" content="width=device-width">
 	<link href="https://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
 	<link href="wai-style-changes.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
 
-	<style type="text/css" xml:space="preserve">
-		<!--
+	<style type="text/css">
 		.style1 {font-weight: bold}
-
+/*
 		.video {
 			margin: 1em 0;
 		}
-		video {
-			width: 100%;
+*/	video {
+			max-width: 100%;
 		}
-		@media screen and (min-width: 43em) {
+		/*@media screen and (min-width: 43em) {
 			video {
 				width: 80%;
 			}
-		}
+		}*/
 		.video .alternative-formats {
 			padding: 0;
 			margin: 0;
@@ -44,8 +44,17 @@
 			height: 1.5em;
 			vertical-align: bottom;
 		}
-		-->
+		.video-container {
+			clear:right;
+		}
+		.video-container + * {
+			clear:both;
+		}
 	</style>
+	<link href="lib/ableplayer.min.css" rel="stylesheet" type="text/css" />
+	<script src="lib/jquery-1.12.3.min.js"></script>
+	<script src="lib/js.cookie.js"></script>
+	<script src="lib/ableplayer.min.js"></script>
 </head>
 <body class="editors-draft">
 	<header>
