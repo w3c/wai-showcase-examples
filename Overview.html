@@ -9,6 +9,30 @@
   <link href="https://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
   <link href="wai-style-changes.css" rel="stylesheet" type="text/css" />
   <!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
+
+	<!-- When moving to live environment this needs to move to wai-main.css -->
+	<style>
+		/* ex-col jumping with hover/focus temp fix. Ideally this should be incorporated
+			into /WAI/style/excol.css to address this issue throughout the site */
+		.f_panelHead {
+			border-bottom: solid #fffaf5;
+			padding-left: 1.6em;
+			position: relative;
+		}
+		.f_panelHead.fs_hover, .f_panelHead.fs_focus {
+			border-bottom: solid #993300;
+		}
+		.f_panelHead.fs_selected {
+			border-bottom: solid #993300;
+		}
+		.f_expanderWrapper {
+			float: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+
 </head>
 <body class="editors-draft">
   <header>
