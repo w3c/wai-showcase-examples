@@ -130,7 +130,7 @@
 
         <ul>
           <li><span class="f_panelHead">What does <em>keyboard compatibility</em> mean?</span>
-            <p>All functionality needs to work with the keyboard. This includes any links, buttons, forms, and other controls. Many websites support use with a mouse only. For example, they do not allow you to type in a date as well as to select it from a pop-up calendar.</p>
+            <p>All functionality needs to work with the keyboard. That is, moving between controls using the tab key and other shortcuts, and typing into input fields. This includes moving between any links, buttons, forms, and other controls. Many websites support use with a mouse only. For example, they do not allow you to type in a date as well as to select it from a pop-up calendar.</p>
           </li>
           <li><span class="f_panelHead">Who depends on this feature?</span>
             <ul>
@@ -147,6 +147,8 @@
           </li>
           <li><span class="f_panelHead">What needs to happen for this to work?</span>
             <p>Often nothing. Form elements and controls in <acronym>HTML</acronym> work with the keyboard by default. Custom made controls and scripts to control the interaction can break this compatibility. Special attention to keyboard use is also required to ensure the flow between controls, for example in forms, menus, and applications.</p>
+            
+            <p>Native <acronym>HTML</acronym> controls, like links, buttons, and form elements, work with the keyboard by default. Problems arise when custom-made controls, <acronym>CSS</acronym> styles, and scripts that control interaction break this compatibility. Also the navigation between multiple controls could cause barriers. For example, when the order of the controls in the source code does not match the visual presentation, or when there are too many controls without a way to jump between groups of related controls. Such issues occur particularly in forms, menus, and applications with many controls.</p>
           </li>
           <li><span class="f_panelHead">Learn more</span>
             <ul>
