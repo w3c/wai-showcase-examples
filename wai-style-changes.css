@@ -135,7 +135,7 @@ p.totop a:hover, p.totop a:focus {
   border-top: 1px solid #ccc;
   line-height: 300%;
 }
-    
+
 @media screen and (min-width: 43em) {
   #nav {
     float: left;
@@ -183,3 +183,94 @@ p.totop a:hover, p.totop a:focus {
     height: 150px;
   }
 }
+
+/** PERMALINKS **/
+
+.permalink-wrapper {
+  position: relative;
+}
+
+.permalink {
+  position: absolute;
+  margin: 0 0 -0.3em 0.5em;
+  bottom: 0;
+  right: 0;
+}
+.permalink.h4 {
+  margin-top: .75em;
+}
+.permalink > a {
+  color: #666 !important;
+  border: 1px solid transparent;
+  text-decoration: none;
+  padding: 0.5em 0.5em 0.3em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: .5em;
+  font-weight: bold;
+  font-size: 60%;
+  white-space: nowrap;
+}
+.permalink > a svg {
+  vertical-align: middle;
+  display: inline-block;
+  height: 1.8em;
+  width: 1.8em;
+  fill: currentcolor;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.permalink > a:hover, .permalink > a:focus {
+  border: 1px solid darkgray;
+}
+.permalink .sharebox {
+  font-size: 90%;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 120%;
+  right: 0;
+  border: 1px solid #8f8f8f;
+  padding: .5em;
+  min-width: 20em;
+  max-width: 100%;
+  box-shadow: 0 0 10px -5px #8f8f8f;
+  background-color: #f5f5f5;
+}
+.permalink .sharebox.open {
+  display: block;
+}
+.permalink .sharebox input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.permalink .sharebox label span {
+  display: block;
+  text-align: right;
+}
+.permalink .sharebox button {
+  background: -webkit-linear-gradient(top, #c2c2c2, #cfcfcf);
+  background: linear-gradient(to bottom, #c2c2c2, #cfcfcf);
+  color: #4d4d4d;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75;
+  padding: .15em .4em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: .25em;
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+.permalink .sharebox button:hover, .permalink .sharebox button:focus {
+  background: -webkit-linear-gradient(top, #333333, #404040);
+  background: linear-gradient(to bottom, #333333, #404040);
+  color: gainsboro;
+}
+.permalink .sharebox p:first-child {
+  margin-top: 0;
+}
+
