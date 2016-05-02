@@ -1,30 +1,30 @@
 /**
  * Assigns accordion functionality to all elements having the class "accordionWrapper"
- * 
+ *
  * @package Excol
  * @author Mandana Eibegger
- *          with support from eGovMon Project and 
+ *          with support from eGovMon Project and
  *          W3C/WAI Education and Outreach Working Group (EOWG)
  *          see http://www.schoener.at/mewidgets/ for more information
  * @version 1.0 (17 Feb 2012)
- * 
+ *
  * Basic framework and tools
  * @uses jquery-1.7.1.min.js jQuery v 1.7.1
  * @uses jquery.metools.js Tools used in the meWidgets
- * 
+ *
  * Reaction to hash changes
  * @uses jquery.ba-hashchange.js jQuery hash change event
  * @uses jquery.mewidget.hashcontrol.js Handle hash change for meWidgets
- * 
+ *
  * Accordion Plugin
  * @uses jquery.mewidget.panel.js Panel object
  * @uses jquery.mewidget.panelwrapper.js Panel object
  * @uses jquery.mewidget.accordion.js Accordion plug-in
- * 
+ *
  * Button Templates
  * @uses controlall.html "expand/collapse all sections" button template
  * @uses controlsection.html "expand/collapse this section" button template
- * 
+ *
  * Styles
  * @uses accordionInit.css Style to initialize the accordion
  * @uses accordionLoaded.css Style needed after initialization
@@ -35,7 +35,7 @@
 
 /**** EDIT THIS ****/
 // edit this to reflect your needs - path should probably be set absolute
-var pathToResource = 'http://www.w3.org/WAI/scripts/excol/'; //'http://www.schoener.at/excol/';
+var pathToResource = '//www.w3.org/WAI/scripts/excol/'; //'http://www.schoener.at/excol/';
 /**** END OF EDIT ****/
 
 /**
@@ -71,7 +71,7 @@ var ie8Fix = pathToResource+'accordion_ie8.css';
 var ie9Fix = pathToResource+'accordion_ie9.css';
 /**
  * Load a CSS file at runtime
- * 
+ *
  * Appends the style tag to the head
  * @param location Path to the style sheet
  */
@@ -86,7 +86,7 @@ function loadCSS ( location ) {
 loadCSS(accordionInitCSS);
 /**
  * Load a Java Script file at runtime
- * 
+ *
  * Appends the script tag to the head
  * @param location Path to the script
  */
@@ -104,10 +104,10 @@ function prepareScripts (timeElapsed) {
     if (typeof(timeElapsed)=="undefined") timeElapsed = 0;
     // loads and polls to see if jQuery is loaded.
     if (typeof($) == "undefined"
-            || typeof($().accordion) == "undefined" 
+            || typeof($().accordion) == "undefined"
             || typeof($().panel) == "undefined"
             || typeof($().panelwrapper) == "undefined") { // scripts not loaded yet...
-        
+
         if (timeElapsed==0) {   // start loading scripts
             loadScript(jQueryLocation);
             loadScript(metoolsLocation);
@@ -121,14 +121,14 @@ function prepareScripts (timeElapsed) {
             setTimeout(function () {
                         prepareScripts(timeElapsed + checkTime);
                        }, checkTime); // set a timer to check if jQuery is loaded
-            
+
         else
             alert("Timed out while loading scripts.")
-        
+
     } else {
         // load IE style fixes and assign the accordion functionality
         $(document).ready( function() {
-            
+
             // load IE style fixes
             if ($.browser.msie) {
                 if ($.browser.version<10)
@@ -138,7 +138,7 @@ function prepareScripts (timeElapsed) {
                 if ($.browser.version<8)
                     loadCSS(ie7Fix);
             }
-            
+
             // assign accordion
             $(".accordionWrapper").accordion({'panelControls' : panelControls, 'widgetLoadedCSS' : accordionLoadedCSS, 'slideAnim' : true, 'headIsTabDefault' : true, 'panelStartClosedDefault' : true});
         });
