@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone</title>
+  <script src="lib/modernizr.custom.js"></script>
   <meta name="viewport" content="width=device-width">
   <link href="http://www.w3.org/WAI/style/excol.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="excol.js" xml:space="preserve"></script>
@@ -31,8 +32,22 @@
 			left: 0;
 			top: 0;
 		}
-	</style>
 
+    /* video styles */
+    video {
+      max-width: 100%;
+    }
+    .video-container {
+      clear:right;
+    }
+    .video-container + * {
+      clear:both;
+    }
+	</style>
+  <link href="lib/ableplayer.min.css" rel="stylesheet" type="text/css" />
+  <script src="lib/jquery-1.12.3.min.js"></script>
+  <script src="lib/js.cookie.js"></script>
+  <script src="lib/ableplayer.min.js"></script>
 </head>
 <body class="editors-draft">
   <header>
