@@ -35,7 +35,7 @@
 
 /**** EDIT THIS ****/
 // edit this to reflect your needs - path should probably be set absolute
-var pathToResource = 'http://www.w3.org/WAI/scripts/excol/'; //'http://www.schoener.at/excol/';
+var pathToResource = '//www.w3.org/WAI/scripts/excol/'; //'http://www.schoener.at/excol/';
 /**** END OF EDIT ****/
 
 /**
