@@ -286,7 +286,7 @@ video {
 .video-container + ul {
   margin-left: 0;
   padding-left: 0;
-  max-width: 480px;
+  max-width: 34.285714286em;
 }
 
 .video-container + ul > li {
