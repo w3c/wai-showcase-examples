@@ -274,3 +274,64 @@ p.totop a:hover, p.totop a:focus {
   margin-top: 0;
 }
 
+/* video styles */
+video {
+  max-width: 100%;
+}
+
+.video-container {
+  clear:right;
+}
+
+.video-container + ul {
+  margin-left: 0;
+  padding-left: 0;
+  max-width: 480px;
+}
+
+.video-container + ul > li {
+  list-style:none;
+}
+
+
+/* ex-col jumping with hover/focus temp fix. Ideally this should be incorporated
+  into /WAI/style/excol.css to address this issue throughout the site */
+.f_panelHead {
+  border-bottom: solid #fffaf5;
+  padding-left: 1.6em;
+  position: relative;
+}
+.f_panelHead.fs_hover, .f_panelHead.fs_focus {
+  border-bottom: solid #993300;
+}
+.f_panelHead.fs_selected {
+  border-bottom: solid #993300;
+}
+.f_expanderWrapper {
+  float: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.f_panelHead {
+  display:block;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.f_panelHead + *, .f_panelHead + * ~ * {
+  margin: 0 0 5px 30px;
+}
+
+.f_panelHead + ul {
+  padding-left: 20px;
+}
+
+.f_panelHead + * {
+  margin-top: 10px;
+}
+
+.f_panelHead + *:last-child, .f_panelHead + * ~ *:last-child {
+  margin-bottom: 10px;
+}
