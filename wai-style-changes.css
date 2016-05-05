@@ -284,13 +284,17 @@ video {
   clear:right;
 }
 
-.video-container + ul {
+.video-container + p {
+  clear: both;
+}
+
+.video-container + p + ul {
   margin-left: 0;
   padding-left: 0;
   max-width: 34.285714286em;
 }
 
-.video-container + ul > li {
+.video-container + p + ul > li {
   list-style:none;
 }
 
