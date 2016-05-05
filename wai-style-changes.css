@@ -286,6 +286,7 @@ video {
 
 .video-container + p {
   clear: both;
+  max-width: 34.285714286em;
 }
 
 .video-container + p + ul {
