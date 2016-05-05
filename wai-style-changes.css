@@ -61,6 +61,7 @@ audio:not([controls]) {
 }
 #main {
   margin: 0;
+  overflow:auto;
 }
 #logos img {
   max-width: none;
