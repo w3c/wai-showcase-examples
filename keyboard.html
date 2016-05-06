@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Keyboard Compatibility - Web Accessibility Perspectives</title>
+  <script src="lib/modernizr.custom.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link href="//www.w3.org/WAI/style/excol.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="excol.js" xml:space="preserve"></script>
+  <link href="//www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
+  <link href="wai-style-changes.css" rel="stylesheet" type="text/css" />
+  <!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
+
+  <link href="lib/ableplayer.min.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="lib/jquery-1.12.3.min.js"></script> -->
+  <script src="lib/js.cookie.js"></script>
+  <script src="lib/ableplayer.min.js"></script>
+</head>
+<body class="editors-draft">
+  <header>
+    <div id="controls"><ul>
+      <li><a href="#skip"><img src="https://www.w3.org/Icons/downinpage.png" alt="" /> Skip to Content</a></li>
+      <li> | <a href="/WAI/changedesign">Change text size or colors</a></li>
+    </ul></div>
+
+    <div id="masthead"><p id="logos"><a href="/" title="W3C Home"><img alt="W3C logo" src="https://www.w3.org/Icons/w3c_home" /></a><a href="/WAI/" title="WAI Home"><img alt="Web Accessibility initiative" src="https://www.w3.org/WAI/images/wai-temp" /></a></p></div>
+
+    <div id="tagline"><p>WAI: Strategies, guidelines, resources to make the Web accessible to people with disabilities</p></div>
+  </header>
+
+  <nav id="nav">
+    <h2>Site Navigation</h2>
+    <p id="w3cnav"><a href="https://www.w3.org/">W3C Home</a></p>
+    <p id="subhomenav"><a href="/WAI/">Web Accessibility Initiative (WAI) Home</a></p>
+    <ol id="nav1" type="A">
+      <li class="current-nav"><a href="../gettingstarted/Overview.html" shape="rect">Getting Started</a>
+        <ul>
+          <li class="nav-head">Using the Web
+            <ol type="1">
+              <li><a href="../users/browsing.html" shape="rect">Better Web Browsing Tips</a></li>
+              <li><a href="../users/inaccessible.html" shape="rect">Contact Inaccessible Websites</a></li>
+            </ol>
+          </li>
+          <li class="current-nav nav-head">Accessibility Basics
+            <ol type="1">
+              <li><a href="/standards/webdesign/accessibility" shape="rect">Accessibility - W3C <img src="/Icons/tr.png" alt="W3C website" /></a></li>
+              <li><a shape="rect" href="accessibility.php">Introduction to Accessibility</a></li>
+              <li class="current-nav">Impact and Benefits
+                <ul>
+                  <li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Keyboard</span>
+                  <li><a href="colors.html">Contrast</a></li>
+                  <li><a href="layout.html">Layout</a></li>
+                  <li><a href="speech.html">Speech</a></li>
+                  <li><a href="large.html">Controls</a></li>
+                  <li><a href="captions.html">Captions</a></li>
+                  <li><a href="customizable.html">Customizable</a></li>
+                  <li><a href="voice.html">Voice</a></li>
+                  <li><a href="understandable.html">Understandable</a></li>
+                  <li><a href="notifications.html">Notifications</a></li>
+                </ul>
+              </li>
+              <li><a href="components.php" shape="rect">Essential Components</a></li>
+              <li><a href="../bcase/Overview.html" shape="rect">Business Case</a></li>
+              <li><a href="/WAI/gettingstarted/tips/index.html">Tips for Getting Started</a></li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li><a href="../users/Overview.html" shape="rect">Designing for Inclusion</a></li>
+      <li><a href="../guid-tech.html" shape="rect">Guidelines &amp; Techniques</a></li>
+      <li><a href="../managing.html" shape="rect">Planning &amp; Implementing</a></li>
+      <li><a href="../eval/Overview.html" shape="rect">Evaluating Accessibility</a></li>
+      <li><a href="../train.html" shape="rect">Presentations &amp; Tutorials</a></li>
+      <li><a href="../about-links.html" shape="rect">Getting Involved with WAI</a></li>
+    </ol>
+    <div id="nav-static">
+      <div class="nav-discover">
+        <p><a href="https://www.w3.org/WAI/yourWAI" shape="rect"><strong><u>Discover new resources</u></strong> for people with disabilities, policy makers, managers, and you!</a></p>
+      </div>
+      <p class="translations"><a href="https://www.w3.org/WAI/wai-translations" shape="rect"><img src="https://www.w3.org/WAI/images/translations-med-1" alt="characters from different languages" /> Translations</a></p>
+    </div>
+  </nav>
+
+  <main id="main" role="main">
+    <div id="skipwrapper"><a id="skip" shape="rect" name="skip">-</a></div>
+
+    <!-- Remove this when moving to live environment -->
+    <div class="status">
+      <p><strong>Status:</strong> This is an in-progress, unapproved draft. Preview videos are not yet captioned or fully accessible.</p>
+    </div>
+
+    <h1>Keyboard Compatibility <br />Web Accessibility Perspectives</h1>
+
+    <h2 id="intro" class="no-display">Introduction</h2>
+    <p>Web accessibility is essential for people with disabilities but useful for many more. Learn about some of the accessibility considerations and how they benefit everyone in different situations.</p>
+
+    <!-- <div class="applicationNaviWrapper">
+      <div id="accordion" class="accordionWrapper">
+        <div class="f_controls_accordion f_fileToLoad_accordionControls"></div> -->
+
+        <h2 class="attach_permalink" id="keyboard">About Keyboard Compatibility</h2>
+        <div class="video-container">
+          <video preload="metadata" poster="stills/keyboard.jpg" data-able-player data-youtube-id="rCplocVemjo" data-youtube-desc-id="OM6XIICm_qo">
+            <!--
+            <track src="captions/keyboard-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
+            <track kind="descriptions" src="captions/keyboard-desc-en.vtt" label="Audio Descriptions" srclang="en" />
+            -->
+          </video>
+        </div>
+        <p>All functionality needs to work with the keyboard. That is, moving between controls using the tab key and other shortcuts, and typing into input fields. This includes moving between any links, buttons, forms, and other controls. Many websites support use with a mouse only. For example, they do not allow you to type in a date as well as to select it from a pop-up calendar.</p>
+
+        <h2>Who depends on this feature?</h2>
+        <ul>
+          <li>People with physical disabilities who cannot use the mouse;</li>
+          <li>People who are blind, and cannot see the mouse pointer on the screen;</li>
+          <li>People with chronical conditions, such as repetitive stress injuries (RSI), who should not use a mouse.</li>
+        </ul>
+
+        <h2>What are the additional benefits?</h2>
+        <ul>
+          <li>Content works for people with temporary limitations, such as a broken arm or broken mouse;</li>
+          <li>Content works in more situations, such as with on-screen keyboards and terminals without a mouse.</li>
+        </ul>
+
+        <h2>What needs to happen for this to work?<h2>
+        <p>Native <acronym>HTML</acronym> controls, like links, buttons, and form elements, work with the keyboard by default. Problems arise when custom-made controls, <acronym>CSS</acronym> styles, and scripts that control interaction break this compatibility. Also the navigation between multiple controls could cause barriers. For example, when the order of the controls in the source code does not match the visual presentation, or when there are too many controls without a way to jump between groups of related controls. Such issues occur particularly in forms, menus, and applications with many controls.</p>
+
+        <h2>Learn more</h2>
+        <ul>
+          <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#keyboard">Functionality is available from a keyboard</a></li>
+          <li><strong>Getting Started:</strong> <a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#ensure-that-all-interactive-elements-are-keyboard-accessible">Ensure that all interactive elements are keyboard accessible</a></li>
+          <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#interaction">Keyboard access and visual focus</a></li>
+          <li><strong>User Story:</strong>
+            <ul>
+              <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#reporter">Mr. Jones, Reporter with repetitive stress injury</a></li>
+              <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#accountant">Ms. Laitinen, Accountant with blindness</a></li>
+              <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#teenager">Ms. Kaseem, Teenager with deaf-blindness</a></li>
+            </ul>
+          </li>
+          <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=keyboard">Success Criteria relating to "keyboard"</a></li
+>
+          <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#mouse">Mouse required for interaction and navigation</a></li>
+          <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> (several related topics)</li>
+        </ul>
+
+        <h2 id="more">More Videos</h2>
+        <ul>
+          <li><a href="keyboard.html">Keyboard Compatibility</a></li>
+          <li><a href="colors.html">Colors with Good Contrast</a></li>
+          <li><a href="layout.html">Clear Layout and Design</a></li>
+          <li><a href="speech.html">Text to Speech</a></li>
+          <li><a href="large.html">Large Links, Buttons, and Controls</a></li>
+          <li><a href="captions.html">Video Captions</a></li>
+          <li><a href="customizable.html">Customizable Text</a></li>
+          <li><a href="voice.html">Voice Recognition</a></li>
+          <li><a href="understandable.html">Understandable Content</a></li>
+          <li><a href="notifications.html">Notifications and Feedback</a></li>
+        </ul>
+
+      <!-- </div>
+    </div> -->
+
+		<aside class="side-box contribute" role="complementary">
+		  <h2 class="heading">Help improve this page</h2>
+		  <p>Please share your ideas, suggestions, or comments via email to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">wai-eo-editors@w3.org</a> or via GitHub.</p>
+			<div class="buttons">
+		  	<a class="btn" title="Publicly archived list" href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">E-mail</a>
+		    <a class="btn"
+href="https://github.com/w3c/wai-showcase-examples/edit/gh-pages/keyboard.html">Fork &amp; edit on GitHub</a>
+		  	<a class="btn" href="https://github.com/w3c/wai-showcase-examples/issues/new?title=%5bPerspectives%20-%20Keyboard%5d">New GitHub Issue</a>
+			</div>
+		</aside>
+
+  </main>
+
+	<footer id="footer" role="contentinfo">
+		<div>
+			<h2><strong>Document Information</strong></h2>
+			<p>
+				<strong>Status:</strong> Unapproved draft.<br clear="none" />
+				<strong>Editor and project lead:</strong> <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>. Developed by the <a href="https://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a> with support from the <a href="https://www.w3.org/WAI/DEV/">WAI-DEV project</a>, co-funded by the European Commission. <a href="acknowledgements.html">Acknowledgements</a>.
+			</p>
+			<div class="footer-nav">
+				<p>[<a href="https://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="https://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="https://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]<br clear="none" />
+					<strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
+			</div>
+	  	<div class="copyright">
+	    	<p>Copyright &#xA9; 2016 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+	  	</div>
+		</div>
+	</footer>
+  <script src="lib/sharebox.js"></script>
+</body>
+</html>
