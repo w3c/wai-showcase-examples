@@ -61,15 +61,12 @@ audio:not([controls]) {
 }
 #main {
   margin: 0;
-  overflow:auto;
+}
+.main-inner {
+  overflow: auto;
 }
 #logos img {
   max-width: none;
-}
-
-
-#main h2 {
-  margin-top: 3em;
 }
 
 p.totop {
@@ -345,4 +342,53 @@ video {
 
 .f_panelHead + *:last-child, .f_panelHead + * ~ *:last-child {
   margin-bottom: 10px;
+}
+
+/* Video List */
+
+.video-listing {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-listing li {
+  list-style: none;
+  width: 50%;
+}
+
+.video-listing a {
+  display:flex;
+  align-items: center;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+}
+
+.video-listing a:hover {
+  background-color: #F7F1F2;
+  border-color: #00559E;
+}
+
+.video-thumb {
+  margin-right: 10px;
+  position:relative;
+}
+
+.video-thumb img {
+  display:block;
+}
+
+.current .video-thumb:before,
+a:hover .video-thumb:before {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -30px;
+  content: '';
+  background-image: url(img/play.svg);
+  background-size: 100% 100%;
 }
