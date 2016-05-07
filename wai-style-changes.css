@@ -106,6 +106,10 @@ p.totop a:hover, p.totop a:focus {
   background: linear-gradient(to bottom, #ccc, #b3b3b3);
 }
 
+.btn:visited {
+  color: #036;
+}
+
 .contribute {
   box-sizing: border-box;
   border: 1px solid #666 !important;
@@ -186,6 +190,7 @@ p.totop a:hover, p.totop a:focus {
 
 .permalink-wrapper {
   position: relative;
+  margin-right: 1px;
 }
 
 .permalink {
@@ -198,22 +203,22 @@ p.totop a:hover, p.totop a:focus {
   margin-top: .75em;
 }
 .permalink > a {
-  color: #666 !important;
-  border: 1px solid transparent;
+/*  color: #333 !important;
+  border: 1px solid;
   text-decoration: none;
   padding: 0.5em 0.5em 0.3em;
   display: inline-block;
   vertical-align: middle;
   margin-left: .5em;
   font-weight: bold;
-  font-size: 60%;
-  white-space: nowrap;
+  white-space: nowrap;*/
+  font-size: .75em;
 }
 .permalink > a svg {
   vertical-align: middle;
   display: inline-block;
-  height: 1.8em;
-  width: 1.8em;
+  height: 1.5em;
+  width: 1.5em;
   fill: currentcolor;
   background-size: contain;
   background-repeat: no-repeat;
@@ -366,7 +371,8 @@ video {
   border: 1px solid transparent;
 }
 
-.video-listing a:hover {
+.video-listing a:hover,
+.video-listing a:focus {
   background-color: #F7F1F2;
   border-color: #00559E;
 }
@@ -381,7 +387,8 @@ video {
 }
 
 .current .video-thumb:before,
-a:hover .video-thumb:before {
+a:hover .video-thumb:before,
+a:focus .video-thumb:before {
   width: 60px;
   height: 60px;
   position: absolute;
