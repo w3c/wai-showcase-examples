@@ -5,9 +5,7 @@
   <title>Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone</title>
   <script src="lib/modernizr.custom.js"></script>
   <meta name="viewport" content="width=device-width">
-  <link href="//www.w3.org/WAI/style/excol.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="excol.js" xml:space="preserve"></script>
-  <link href="//www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
+  <link href="https://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
   <link href="wai-style-changes.css" rel="stylesheet" type="text/css" />
   <!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
 
@@ -45,7 +43,20 @@
             <ol type="1">
               <li><a href="/standards/webdesign/accessibility" shape="rect">Accessibility - W3C <img src="/Icons/tr.png" alt="W3C website" /></a></li>
               <li><a shape="rect" href="accessibility.php">Introduction to Accessibility</a></li>
-              <li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Impact and Benefits</span></li>
+              <li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Impact and Benefits</span>
+                <ul>
+                  <li><a href="keyboard.html">Keyboard</a></li>
+                  <li><a href="contrast.html">Contrast</a></li>
+                  <li><a href="layout.html">Layout</a></li>
+                  <li><a href="speech.html">Speech</a></li>
+                  <li><a href="large.html">Controls</a></li>
+                  <li><a href="captions.html">Captions</a></li>
+                  <li><a href="customizable.html">Customizable</a></li>
+                  <li><a href="voice.html">Voice</a></li>
+                  <li><a href="understandable.html">Understandable</a></li>
+                  <li><a href="notifications.html">Notifications</a></li>
+                </ul>
+              </li>
               <li><a href="components.php" shape="rect">Essential Components</a></li>
               <li><a href="../bcase/Overview.html" shape="rect">Business Case</a></li>
               <li><a href="/WAI/gettingstarted/tips/index.html">Tips for Getting Started</a></li>
@@ -70,538 +81,62 @@
 
   <main id="main" role="main">
     <div class="main-inner">
-    <div id="skipwrapper"><a id="skip" shape="rect" name="skip">-</a></div>
+      <div id="skipwrapper"><a id="skip" shape="rect" name="skip">-</a></div>
 
-    <!-- Remove this when moving to live environment -->
-    <div class="status">
-      <p><strong>Status:</strong> This is an in-progress, unapproved draft. Preview videos are not yet captioned or fully accessible.</p>
-    </div>
+      <h1>Web Accessibility Perspectives: <br />Explore the Impact and Benefits for Everyone</h1>
 
-    <h1>Web Accessibility Perspectives: <br />Explore the Impact and Benefits for Everyone</h1>
+      <h2 id="intro" class="no-display">Introduction</h2>
+      <p>Web accessibility is essential for people with disabilities but useful for many more. Learn about some of the accessibility considerations and how they benefit everyone in different situations.</p>
 
-    <h2 id="intro" class="no-display">Introduction</h2>
-    <p>Web accessibility is essential for people with disabilities but useful for many more. Learn about some of the accessibility considerations and how they benefit everyone in different situations.</p>
+      <h2 id="more">Impact &amp; Benefits Videos</h2>
+      <ul class="video-listing">
+        <li class="current"><a><span class="video-thumb" aria-label="Current: "><img src="img/video-thumb-demo.jpg" alt=""></span> Keyboard Compatibility</a></li>
+        <li><a href="contrast.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Colors with Good Contrast</a></li>
+        <li><a href="layout.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Clear Layout and Design</a></li>
+        <li><a href="speech.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Text to Speech</a></li>
+        <li><a href="large.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Large Links, Buttons, and Controls</a></li>
+        <li><a href="captions.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Video Captions</a></li>
+        <li><a href="customizable.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Customizable Text</a></li>
+        <li><a href="voice.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Voice Recognition</a></li>
+        <li><a href="understandable.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Understandable Content</a></li>
+        <li><a href="notifications.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Notifications and Feedback</a></li>
+      </ul>
 
-    <div class="applicationNaviWrapper">
-      <div id="accordion" class="accordionWrapper">
-        <div class="f_controls_accordion f_fileToLoad_accordionControls"></div>
+      <h2 id="resources">Learn More about Web Accessibility</h2>
+      <p>This website provides a variety of standards, guidelines, and resources to get you started with web accessibility:</p>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/intro/accessibility.php">Introduction to Web Accessibility</a></li>
+        <li><a href="https://www.w3.org/WAI/intro/people-use-web/">How People with Disabilities Use the Web</a> - outlines users stories, assistive technologies, and accessibility principles</li>
+        <li><a href="https://www.w3.org/WAI/gettingstarted/tips/">Getting Started Tips</a> - basic first steps for web designers, writers, and developers</li>
+        <li><a href="https://www.w3.org/WAI/bcase/">Business Case</a> - highlights arguments, including social, technical, financial, and legal factors</li>
+        <li><a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> - more in-depth guidance for developing accessible web content</li>
+      </ul>
 
-        <h2 class="attach_permalink" id="keyboard">Keyboard Compatibility</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/keyboard.jpg" data-able-player data-youtube-id="rCplocVemjo" data-youtube-desc-id="OM6XIICm_qo">
-            <!--
-            <track src="captions/keyboard-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/keyboard-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-            -->
-          </video>
+      <aside class="side-box contribute" role="complementary">
+        <h2 class="heading">Help improve this page</h2>
+        <p>Please share your ideas, suggestions, or comments via email to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">wai-eo-editors@w3.org</a> or via GitHub.</p>
+        <div class="buttons">
+          <a class="btn" title="Publicly archived list" href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Overview%5d">E-mail</a>
+          <a class="btn" href="https://github.com/w3c/wai-showcase-examples/edit/gh-pages/Overview.html">Fork &amp; edit on GitHub</a>
+          <a class="btn" href="https://github.com/w3c/wai-showcase-examples/issues/new?title=%5bPerspectives%20-%20Overview%5d">New GitHub Issue</a>
         </div>
-        <p>All functionality needs to work with the keyboard. That is, moving between controls using the tab key and other shortcuts, and typing into input fields. This includes moving between any links, buttons, forms, and other controls. Many websites support use with a mouse only. For example, they do not allow you to type in a date as well as to select it from a pop-up calendar.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with physical disabilities who cannot use the mouse;</li>
-              <li>People who are blind, and cannot see the mouse pointer on the screen;</li>
-              <li>People with chronical conditions, such as repetitive stress injuries (RSI), who should not use a mouse.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content works for people with temporary limitations, such as a broken arm or broken mouse;</li>
-              <li>Content works in more situations, such as with on-screen keyboards and terminals without a mouse.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Native <acronym>HTML</acronym> controls, like links, buttons, and form elements, work with the keyboard by default. Problems arise when custom-made controls, <acronym>CSS</acronym> styles, and scripts that control interaction break this compatibility. Also the navigation between multiple controls could cause barriers. For example, when the order of the controls in the source code does not match the visual presentation, or when there are too many controls without a way to jump between groups of related controls. Such issues occur particularly in forms, menus, and applications with many controls.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#keyboard">Functionality is available from a keyboard</a></li>
-              <li><strong>Getting Started:</strong> <a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#ensure-that-all-interactive-elements-are-keyboard-accessible">Ensure that all interactive elements are keyboard accessible</a></li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#interaction">Keyboard access and visual focus</a></li>
-              <li><strong>User Story:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#reporter">Mr. Jones, Reporter with repetitive stress injury</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#accountant">Ms. Laitinen, Accountant with blindness</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#teenager">Ms. Kaseem, Teenager with deaf-blindness</a></li>
-                </ul>
-              </li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=keyboard">Success Criteria relating to "keyboard"</a></li>
-              <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#mouse">Mouse required for interaction and navigation</a></li>
-              <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> (several related topics)</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="colors">Colors with Good Contrast</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/colors.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/colors-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/colors-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>There needs to be sufficent contrast between text and its background (technically called <em>luminosity contrast ratio</em>). This also includes text on images, icons, and buttons. Too little contrast makes the content difficult to read. Some people are also sensitive to bright colors.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with color blindess, who cannot discern certain colors;</li>
-              <li>People with color perception limitations and sensitivities.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content works in different lighting conditions, such as sunlight and glare, especially on mobile devices;</li>
-              <li>Content is easier to read by everyone, including those who do not have specific sight conditions.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>The selection of appropriate foreground and background colors is crucial. There are tools to help check and select appropriate color combinations. This is ideally done during the early design stage and the selection of color palettes.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#distinguishable">Content is easier to see and hear</a></li>
-              <li><strong>Getting Started:</strong> <a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-sufficient-contrast-between-foreground-and-background">Provide sufficient contrast between foreground and background</a></li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#contrast">Contrast ratio ("color contrast")</a></li>
-              <li><strong>User Story:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#shopper">Mr. Lee, Online shopper with color blindness</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#retiree">Mr. Yunus, Retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
-                </ul>
-              </li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=contrast">Success Criteria relating to "contrast"</a></li>
-              <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#color">Information conveyed solely with color</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="layout">Clear Layout and Design</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/layout.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/layout-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/clear-layout-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>The different parts of a web page need to be easy to locate and identify. For example, sometimes it is not easy to identify navigation menus and their menu items. Also the labels for form fields and controls are difficult to identify and associate their correspondence.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with low vision who are using screen magnification and only seeing a portion of the screen at a time;</li>
-              <li>People with cognitive and learning disabilities who often need clarify and consistency to orient themselves on a website.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content is more usable for people who are new to the particular website or application;</li>
-              <li>Content is more usable for people who are not confident in using computers and the web;</li>
-              <li>Content is more usable for mobile device users who are seeing it on smaller screens, and possibly in a hurry or with distraction.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Emplyoing a functional design with appropriate structure and placement. For example, by grouping related input and controls on a form, and provding headers to identify such groups. This includes in the markup coding and visually. Also the consistency of presentation and behavior of web page components is important.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#navigable">Users can easily navigate, find content, and determine where they are</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#predictable">Content appears and operates in predictable ways</a></li>
-                </ul>
-              </li>
-              <li><strong>Getting Started:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-clear-and-consistent-navigation-options">Provide clear and consistent navigation options</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#ensure-that-interactive-elements-are-easy-to-identify">Ensure that interactive elements are easy to identify</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#ensure-that-form-elements-include-clearly-associated-labels">Ensure that form elements include clearly associated labels</a></li>
-                </ul>
-              </li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#forms">Forms, labels, and errors</a></li>
-              <li><strong>User Story:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#classroomstudent">Ms. Olsen, Classroom student with attention deficit hyperactivity disorder (ADHD) and dyslexia</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#retiree">Mr. Yunus, Retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#supermarketassistant">Mr. Sands, Supermarket assistant with Down syndrome</a></li>
-                </ul>
-              </li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=layout">Success Criteria relating to "layout"</a></li>
-              <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#tab">Inconsistency between focus (tab) order and logical document content sequence</a></li>
-              <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/page-structure/">Page Structure - Web Accessibility Tutorials</a> (draft)</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="speech">Text to Speech</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/text-to-speech.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/speech-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/speech-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>Content needs to be coded so that it can be read aloud by text to speech software. Many computers and mobile devices today have built in text to speech software. People with disabilities may use specialized text to speech software called screen readers. These can also highlight the text as it is being read aloud, for people to see and hear the content at the same time.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People who are blind and cannot see what is on the screen;</li>
-              <li>People who have partial sight (often legally blind) and cannot see certain types of content;</li>
-              <li>People with some forms of dyslexia and other cognitive and learning disabilities, who need to see and hear the text to better understand it.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content can be read aloud for people who cannot read the written language;</li>
-              <li>Content can be read aloud for people who prefer to listen, for example while multi-tasking.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Using semantic <acronmy>HTML</acronmy> markup for structures, such as headings, paragraphs, lists, forms, and tables is essential for text to speech to work. Also, text alternatives are necessary for images, icons, and other non-text content. Screen reading software announces these structures, and can also read text alternatives for images when they are present.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#alternatives">Text alternatives for non-text content</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#adaptable">Content can be presented in different ways</a></li>
-                </ul>
-              </li>
-              <li><strong>Getting Started:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/writing.html#write-meaningful-text-alternatives-for-images">Write meaningful text alternatives for images</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/writing.html#use-headings-to-convey-meaning-and-structure">Use headings to convey meaning and structure</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#identify-page-language-and-language-changes">Identify page language and language changes</a></li>
-                </ul>
-              </li>
-              <li><strong>Easy Check:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/eval/preliminary.html#images">Image text alternatives ("alt text")</a></li>
-                  <li><a href="https://www.w3.org/WAI/eval/preliminary.html#structure">Basic Structure Check</a></li>
-                </ul>
-              </li>
-              <li><strong>User Story:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#accountant">Ms. Laitinen, Accountant with blindness</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#teenager">Ms. Kaseem, Teenager with deaf-blindness</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#classroomstudent">Ms. Olsen, Classroom student with attention deficit hyperactivity disorder (ADHD) and dyslexia</a></li>
-                </ul>
-              </li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=text-alternatives">Success Criteria relating to "text to speech"</a></li>
-              <li><strong>Mobile Web Design:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/mobile/experiences.html#non-text">Non-text objects (images, sound, video) with no text alternative</a></li>
-                  <li><a href="https://www.w3.org/WAI/mobile/experiences.html#visual-formatting">Information conveyed only using CSS (visual formatting)</a></li>
-                  <li><a href="https://www.w3.org/WAI/mobile/experiences.html#link-label">Non descriptive link label</a></li>
-                </ul>
-              </li>
-              <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> (several related topics)</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="large">Large Links, Buttons, and Controls</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/large.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="vcaptions/large-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/large-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>The area for clicking and tapping controls should be large enough for people to activate them. This includes links, buttons, checkboxes, and other controls. Small controls, or controls that are placed too closely to each other, are difficult to use by many people. This is particularly relevant on mobile devices with small screens.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with physical disabilities who have reduced dexterity;</li>
-              <li>People with chronical conditions, such as repetitive stress injuries (RSI), who need to avoid excessive movement.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content is more usable on touch screens, especially on smaller mobile devices;</li>
-              <li>Content is more usable for everyone not used to the mouse or touch-pad on the computer they are using.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Enlarging the size of the controls and activation areas around the controls brings improvement. Just increasing the font size of the control often isn't enough. Additionally, providing labels for controls, which is an accessibility requirement itself, often enlarges the activation area.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#navigable">Users can easily navigate, find content, and determine where they are</a></li>
-              <li><strong>Getting Started:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#ensure-that-form-elements-include-clearly-associated-labels">Ensure that form elements include clearly associated labels</a></li>
-                </ul>
-              </li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#forms">Forms, labels, and errors</a></li>
-              <li><strong>User Story:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#retiree">Mr. Yunus, Retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=labels">Success Criteria relating to "labels"</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="captions">Video Captions</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/captions.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/captions-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/captions-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>All audio that is played together with visual content needs to be captioned. This includes video and animations. Captions are a text form of everything that is spoken in the audio (subtitles), and of important audio content. This includes information about who is speaking if it is not visible, any sound effects, music, laughter, and so on. Captions are synchronized with the visual content playing.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People who are deaf and cannot hear the audio;</li>
-              <li>People who are hard of hearing (often legally deaf) and cannot hear certain types of content;</li>
-              <li>People with some forms of dyslexia and other cognitive and learning disability, who need to see and hear the text to better understand it.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content can be used in loud environments where you cannot hear the audio;</li>
-              <li>Content can be used in silent environments where you cannot use audio;</li>
-              <li>Content can be better understood by people hearing and seeing the information, for example people who are less fluent in the language spoken.</li>
-              <li>Content can be more easily transcribed using the captions, which also improved indexing for search engines.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Captions need to be made available together with pre-recorded and live video content. Voice recognition software can be of great help for simple videos. Sometimes voice recognition software is built into the computer or the social media platform, such as YouTube. For many languages there are also captioning services that are quite affordable.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#captions">Captions and other alternatives for multimedia</a></li>
-              <li><strong>Getting Started:</strong> <a href="https://www.w3.org/WAI/gettingstarted/tips/writing.html#create-transcripts-and-captions-for-multimedia">Create transcripts and captions for multimedia</a></li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary#media">Multimedia (video, audio) alternatives</a></li>
-              <li><strong>User Story:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#onlinestudent">Ms. Martinez, Online student who is hard of hearing</a></li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=captions">Success Criteria relating to "captions"</a></li>
-              <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#multimedia">Multimedia with no captions</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="customizable">Customizable Text</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/customizable.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/customizable-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/customizable-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>Users need to be able to change the size, spacing, font, and colors of the text. This includes that text re-flows properly when it is enlarged, and that no information or functionality is lost (text re-sizing is different from zooming or magnification, which enlarge the entire web page). Many web browsers provide customization options, though sometimes they are not easily findable. Some web browser plug-ins and mobile applications do not provide or adhere to such settings.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with low vision who are not using screen magnification software;</li>
-              <li>People with some forms of dyslexia and other cognitive and learning disabilities, who need particular presentation of the text to better read it.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content is more adaptable to smaller and also larger screen sizes;</li>
-              <li>Content is more adaptable to personal preferences and comfort;</li>
-              <li>Content is more ready for translation, to adapt to words and sentences of different lengths.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Content needs to be properly designed and coded, so that it can adapt to different customization options. This includes using relative rather than absolute units for the size of fonts, controls, and other objects. Applications should use the settings of the web browser or operating system. Websites and applications could also provide information to help users change their own settings.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#adaptable">Content can be presented in different ways</a></li>
-              <li><strong>Getting Started:</strong> <a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#write-code-that-adapts-to-the-users-technology">Write code that adapts to the user's technology</a></li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary#resize">Resize text</a></li>
-              <li><strong>User Story:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#retiree">Mr. Yunus, Retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#classroomstudent">Ms. Olsen, Classroom student with attention deficit hyperactivity disorder (ADHD) and dyslexia</a></li>
-                </ul>
-              </li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=text">Success Criteria relating to "text"</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="voice">Voice Recognition</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/voice.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/voice-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/voice-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>Content needs to be properly designed and coded, so that it can be used through voice. This includes dictating text in a form field, as well as issuing commands to activate links, buttons, and other controls. Most computers and mobile devices today have built-in voice recognition software. Some voice recognition software allows complete control over computer interaction, including to scroll the screen, copy and paste text, and activate menus.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with physical disabilities who cannot use the keyboard or mouse;</li>
-              <li>People with chronical conditions, such as repetitive stress injuries (RSI), who should not use the keyboard or mouse.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content works for people with temporary limitations, such as a broken arm;</li>
-              <li>Content is more usable for people who prefer to speak rather than type, for example while multi-tasking.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p><a href="#keyboard">Keyboard compatibility</a> is the basis for voice recognition. In addition, labels and identifiers for controls in the source code need to match their visual presentation, so that it is clear which voice command will activate a control.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#keyboard">Functionality is available from a keyboard</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#predictable">Content appears and operates in predictable ways</a></li>
-                </ul>
-              </li>
-              <li><strong>Getting Started:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#ensure-that-all-interactive-elements-are-keyboard-accessible">Ensure that all interactive elements are keyboard accessible</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#provide-meaning-for-non-standard-interactive-elements">Provide meaning for non-standard interactive elements</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-alternative-text-for-images">Provide alternative text for images</a></li>
-                </ul>
-              </li>
-              <li><strong>Easy Check:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/eval/preliminary.html#interaction">Keyboard access and visual focus</a></li>
-                  <li><a href="https://www.w3.org/WAI/eval/preliminary#forms">Forms, labels, and errors</a></li>
-                </ul>
-              </li>
-              <li><strong>User Story:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#reporter">Mr. Jones, Reporter with repetitive stress injury</a></li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=keyboard">Success Criteria relating to "keyboard"</a></li>
-              <li><strong>Mobile:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/mobile/experiences.html#mouse">Mouse required for interaction and navigation</a></li>
-                  <li><a href="https://www.w3.org/WAI/mobile/experiences.html#link-label">Non descriptive link label</a></li>
-                </ul>
-              </li>
-              <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> (several related topics)</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="understandable">Understandable Content</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/understandable.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/understandable-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/understandable-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>Content needs to be easy to follow and understand by the majority of the target audience. In specific situations separate easy-to-read content may be necessary, for example for information relating to health and safety. For the majority of content this means simply avoiding overly complex sentences and jargon, and providing clear layout and design.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with learning disabilities who cannot understand complex sentence structures and vocabulary;</li>
-              <li>People with some forms of cognitive disabilities who have difficulty focusing on long passages of dense text.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content is more usable for people with lower language skills, such as non-native language users and people with low literacy;</li>
-              <li>Content is more easy to overview and skim, and to build a mental-model of the information.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Avoiding overly complex words, jargon, and acronyms, and providing explanations for these when they need to be used. Also providing structure using headings, lists, and spacing is important. Illustrations are often helpful. Indicating orientation cues, such as during a purchasing process or in a series of instructions, also helps. Much of these presentation aspects correspond with the <a href="#layout">clear layout and design</a> feature.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#understandable">Understandable information and user interface</a></li>
-              <li><strong>Getting Started:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/writing.html#keep-content-clear-and-concise">Keep content clear and concise</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/writing.html#provide-clear-instructions">Provide clear instructions</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/writing.html#use-headings-to-convey-meaning-and-structure">Use headings to convey meaning and structure</a></li>
-                </ul>
-              </li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary#headings">Headings</a></li>
-              <li><strong>User Story:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#classroomstudent">Ms. Olsen, Classroom student with attention deficit hyperactivity disorder (ADHD) and dyslexia</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#retiree">Mr. Yunus, Retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#supermarketassistant">Mr. Sands, Supermarket assistant with Down syndrome</a></li>
-                </ul>
-              </li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=meaning">Success Criteria relating to "meaning"</a></li>
-              <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#understandable">Understandable</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="notifications">Notifications and Feedback</h2>
-        <div class="video-container">
-          <video preload="metadata" poster="stills/notifications.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-            <track src="captions/notifications-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-            <track kind="descriptions" src="captions/notifications-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-          </video>
-        </div>
-        <p>Users need to be kept informed about what is going on, and to receive appropriate feedback during interaction. This includes confirmation messages when actions are completed, such as when forms are submitted. Also error messages should help rather than confuse users.</p>
-        <ul>
-          <li><span class="f_panelHead">Who depends on this feature?</span>
-            <ul>
-              <li>People with some forms of cognitive and learning disabilities, who may be easily distracted by unexpected behavior and confusing error messages.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What are the additional benefits?</span>
-            <ul>
-              <li>Content is more usable for people who are new to the particular website or application;</li>
-              <li>Content is more usable for people who are not confident in using computers and the web.</li>
-            </ul>
-          </li>
-          <li><span class="f_panelHead">What needs to happen for this to work?</span>
-            <p>Use clear and simple language to make error messages more understandable. For example, describe how to fix an error. If a form has been submitted, make sure to follow it with a confirmation message. If a change is being made on the screen, such as the appearance of a loading spinner, or new content being injected, make sure that users are alerted to this change.</p>
-          </li>
-          <li><span class="f_panelHead">Learn more</span>
-            <ul>
-              <li><strong>Accessibility Principle:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#predictable">Content appears and operates in predictable ways</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#tolerant">Users are helped to avoid and correct mistakes</a></li>
-                </ul>
-              </li>
-              <li><strong>Getting Started:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/writing.html#provide-clear-instructions">Provide clear instructions</a></li>
-                  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#help-users-avoid-and-correct-mistakes">Help users avoid and correct mistakes</a></li>
-                </ul>
-              </li>
-              <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary#forms">Forms, labels, and errors (including Search fields)</a></li>
-              <li><strong>User Story:</strong>
-                <ul>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#classroomstudent">Ms. Olsen, Classroom student with attention deficit hyperactivity disorder (ADHD) and dyslexia</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#retiree">Mr. Yunus, Retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
-                  <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#supermarketassistant">Mr. Sands, Supermarket assistant with Down syndrome</a></li>
-                </ul>
-              </li>
-              <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=labels">Success Criteria relating to "errors"</a></li>
-              <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/">Forms - Web Accessibility Tutorials</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <h2 class="attach_permalink" id="resources">Learn More about Web Accessibility</h2>
-        <p>This website provides a variety of standards, guidelines, and resources to get you started with web accessibility:</p>
-        <ul>
-          <li><a href="https://www.w3.org/WAI/intro/accessibility.php">Introduction to Web Accessibility</a></li>
-          <li><a href="https://www.w3.org/WAI/intro/people-use-web/">How People with Disabilities Use the Web</a> - outlines users stories, assistive technologies, and accessibility principles</li>
-          <li><a href="https://www.w3.org/WAI/gettingstarted/tips/">Getting Started Tips</a> - basic first steps for web designers, writers, and developers</li>
-          <li><a href="https://www.w3.org/WAI/bcase/">Business Case</a> - highlights arguments, including social, technical, financial, and legal factors</li>
-          <li><a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> - more in-depth guidance for developing accessible web content</li>
-        </ul>
-
-      </div>
-    </div>
+      </aside>
     </div>
   </main>
 
-	<footer id="footer" role="contentinfo">
-		<div>
-			<h2><strong>Document Information</strong></h2>
-			<p>
-				<strong>Status:</strong> Unapproved draft.<br clear="none" />
-				<strong>Editor and project lead:</strong> <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>. Developed by the <a href="https://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a> with support from the <a href="https://www.w3.org/WAI/DEV/">WAI-DEV project</a>, co-funded by the European Commission. <a href="acknowledgements.html">Acknowledgements</a>.
-			</p>
-			<div class="footer-nav">
-				<p>[<a href="https://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="https://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="https://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>]<br clear="none" />
-					<strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
-			</div>
-	  	<div class="copyright">
-	    	<p>Copyright &#xA9; 2016 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
-	  	</div>
-		</div>
-	</footer>
-  <script src="lib/sharebox.js"></script>
+  <footer id="footer" role="contentinfo">
+    <div>
+      <h2><strong>Document Information</strong></h2>
+      <p><strong>Status:</strong> Updated 6 May 2016. <br clear="none" /><strong>Editor and project lead:</strong> <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>. Developed by the <a href="https://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a> with support from the <a href="https://www.w3.org/WAI/DEV/">WAI-DEV project</a>, co-funded by the European Commission. <a href="acknowledgements.html">Acknowledgements</a>.</p>
+      <div class="footer-nav">
+        <p>[<a href="https://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="https://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="https://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>] <br clear="none" /><strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#xA9; 2016 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="lib/sharebox.js"></script>
 </body>
 </html>
