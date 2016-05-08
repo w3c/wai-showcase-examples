@@ -116,7 +116,7 @@ p.totop a:hover, p.totop a:focus {
   background-color: #fff7f0;
   border-radius: .5em;
   padding: 1em;
-  margin: 1em auto;
+  margin: 3em auto 1em;
   width: 90%;
 }
 .contribute .heading {
