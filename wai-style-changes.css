@@ -301,15 +301,28 @@ video {
 
 .video-listing li {
   list-style: none;
-  width: 50%;
+  width: 100%;
+}
+
+.video-listing li:first-child {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 53em) {
+  .video-listing li {
+    width: 50%;
+  }
 }
 
 .video-listing a {
   display:flex;
+  overflow: hidden;
   align-items: center;
   padding: 5px;
   margin-right: 10px;
   border: 1px solid transparent;
+  width:100%;
+  box-sizing: border-box;
 }
 
 .video-listing a:hover,
@@ -318,13 +331,23 @@ video {
   border-color: #00559E;
 }
 
+.video-listing a span {
+
+}
+
 .video-thumb {
   margin-right: 10px;
   position:relative;
+  width: 160px;
+  display:inline-block;
+  float: left;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .video-thumb img {
   display:block;
+  width: 160px;
 }
 
 .current .video-thumb:before,
