@@ -5,9 +5,7 @@
   <title>Keyboard Compatibility - Web Accessibility Perspectives</title>
   <script src="lib/modernizr.custom.js"></script>
   <meta name="viewport" content="width=device-width">
-  <link href="//www.w3.org/WAI/style/excol.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="excol.js" xml:space="preserve"></script>
-  <link href="//www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
+  <link href="https://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
   <link href="wai-style-changes.css" rel="stylesheet" type="text/css" />
   <!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
 
@@ -48,7 +46,7 @@
               <li class="current-nav">Impact &amp; Benefits Videos
                 <ul>
                   <li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Keyboard</span>
-                  <li><a href="colors.html">Contrast</a></li>
+                  <li><a href="contrast.html">Contrast</a></li>
                   <li><a href="layout.html">Layout</a></li>
                   <li><a href="speech.html">Speech</a></li>
                   <li><a href="large.html">Controls</a></li>
@@ -85,168 +83,81 @@
     <div class="main-inner">
       <div id="skipwrapper"><a id="skip" shape="rect" name="skip">-</a></div>
 
-      <!-- Remove this when moving to live environment -->
-      <div class="status">
-        <p><strong>Status:</strong> This is an in-progress, unapproved draft. Preview videos are not yet captioned or fully accessible.</p>
-      </div>
-
       <h1 class="attach_permalink">Keyboard Compatibility <br />Web Accessibility Perspectives</h1>
 
       <h2 id="intro" class="no-display">Introduction</h2>
-      <p>Web accessibility is essential for people with disabilities but useful for many more. Learn about some of the accessibility considerations and how they benefit everyone in different situations. See <a href="Overview.html">more videos</a>.</p>
+      <p>Web accessibility is essential for people with disabilities but useful for many more. Learn about some of the accessibility considerations and how they benefit everyone in different situations.</p>
 
-      <!-- <div class="applicationNaviWrapper">
-        <div id="accordion" class="accordionWrapper">
-          <div class="f_controls_accordion f_fileToLoad_accordionControls"></div> -->
+      <h2 id="video" class="no-display">Video on Keyboard Compatibility</h2>
+      <div class="video-container">
+        <video preload="metadata" poster="stills/keyboard.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
+          <track src="captions/keyboard-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
+          <track kind="descriptions" src="captions/keyboard-desc-en.vtt" label="Audio Descriptions" srclang="en" />
+        </video>
+      </div>
 
-          <h2 id="video" class="no-display">Video on Keyboard Compatibility</h2>
-          <div class="video-container">
-            <video preload="metadata" poster="stills/keyboard.jpg" poster="img/video-thumb-demo.jpg" data-able-player data-youtube-id="rCplocVemjo" data-youtube-desc-id="OM6XIICm_qo">
-              <!--
-              <track src="captions/keyboard-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
-              <track kind="descriptions" src="captions/keyboard-desc-en.vtt" label="Audio Descriptions" srclang="en" />
-              -->
-            </video>
-          </div>
+      <h2 id="what">What is Keyboard Compatibility?</h2>
+      <p>All functionality needs to work with the keyboard. That is, moving between controls using the tab key and other shortcuts, and typing into input fields. This includes moving between any links, buttons, forms, and other controls. Many websites support use with a mouse only. For example, they do not allow you to type in a date as well as to select it from a pop-up calendar.</p>
 
-          <h2 id="what">What is Keyboard Compatibility?</h2>
-          <p>All functionality needs to work with the keyboard. That is, moving between controls using the tab key and other shortcuts, and typing into input fields. This includes moving between any links, buttons, forms, and other controls. Many websites support use with a mouse only. For example, they do not allow you to type in a date as well as to select it from a pop-up calendar.</p>
+      <h2 id="who">Who depends on this feature?</h2>
+      <ul>
+        <li>People with physical disabilities who cannot use the mouse;</li>
+        <li>People who are blind, and cannot see the mouse pointer on the screen;</li>
+        <li>People with chronical conditions, such as repetitive stress injuries (RSI), who should not use a mouse.</li>
+      </ul>
 
-          <h2 id="who">Who depends on this feature?</h2>
+      <h2 id="others">What are the additional benefits?</h2>
+      <ul>
+        <li>Content works for people with temporary limitations, such as a broken arm or broken mouse;</li>
+        <li>Content works in more situations, such as with on-screen keyboards and terminals without a mouse.</li>
+      </ul>
+
+      <h2 id="action">What needs to happen for this to work?</h2>
+      <p>Native <acronym>HTML</acronym> controls, like links, buttons, and form elements, work with the keyboard by default. Problems arise when custom-made controls, <acronym>CSS</acronym> styles, and scripts that control interaction break this compatibility. Also the navigation between multiple controls could cause barriers. For example, when the order of the controls in the source code does not match the visual presentation, or when there are too many controls without a way to jump between groups of related controls. Such issues occur particularly in forms, menus, and applications with many controls.</p>
+
+      <h2 id="resources">Learn more</h2>
+      <ul>
+        <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#keyboard">Functionality is available from a keyboard</a></li>
+        <li><strong>Getting Started:</strong> <a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#ensure-that-all-interactive-elements-are-keyboard-accessible">Ensure that all interactive elements are keyboard accessible</a></li>
+        <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#interaction">Keyboard access and visual focus</a></li>
+        <li><strong>User Story:</strong>
           <ul>
-            <li>People with physical disabilities who cannot use the mouse;</li>
-            <li>People who are blind, and cannot see the mouse pointer on the screen;</li>
-            <li>People with chronical conditions, such as repetitive stress injuries (RSI), who should not use a mouse.</li>
+            <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#reporter">Mr. Jones, Reporter with repetitive stress injury</a></li>
+            <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#accountant">Ms. Laitinen, Accountant with blindness</a></li>
+            <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#teenager">Ms. Kaseem, Teenager with deaf-blindness</a></li>
           </ul>
+        </li>
+        <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=keyboard">Success Criteria relating to "keyboard"</a></li
+>
+        <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#mouse">Mouse required for interaction and navigation</a></li>
+        <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> (several related topics)</li>
+      </ul>
 
-          <h2 id="others">What are the additional benefits?</h2>
-          <ul>
-            <li>Content works for people with temporary limitations, such as a broken arm or broken mouse;</li>
-            <li>Content works in more situations, such as with on-screen keyboards and terminals without a mouse.</li>
-          </ul>
+      <section aria-labelledby="more">
+      <h2 id="more">Impact &amp; Benefits Videos</h2>
+        <ul class="video-listing">
+          <li class="current"><a><span class="video-thumb" aria-label="Current: "><img src="img/video-thumb-demo.jpg" alt=""></span> Keyboard Compatibility</a></li>
+          <li><a href="contrast.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Colors with Good Contrast</a></li>
+          <li><a href="layout.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Clear Layout and Design</a></li>
+          <li><a href="speech.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Text to Speech</a></li>
+          <li><a href="large.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Large Links, Buttons, and Controls</a></li>
+          <li><a href="captions.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Video Captions</a></li>
+          <li><a href="customizable.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Customizable Text</a></li>
+          <li><a href="voice.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Voice Recognition</a></li>
+          <li><a href="understandable.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Understandable Content</a></li>
+          <li><a href="notifications.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Notifications and Feedback</a></li>
+        </ul>
+      </section>
 
-          <h2 id="action">What needs to happen for this to work?</h2>
-          <p>Native <acronym>HTML</acronym> controls, like links, buttons, and form elements, work with the keyboard by default. Problems arise when custom-made controls, <acronym>CSS</acronym> styles, and scripts that control interaction break this compatibility. Also the navigation between multiple controls could cause barriers. For example, when the order of the controls in the source code does not match the visual presentation, or when there are too many controls without a way to jump between groups of related controls. Such issues occur particularly in forms, menus, and applications with many controls.</p>
-
-          <h2 id="resources">Learn more</h2>
-          <ul>
-            <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#keyboard">Functionality is available from a keyboard</a></li>
-            <li><strong>Getting Started:</strong> <a href="https://www.w3.org/WAI/gettingstarted/tips/developing.html#ensure-that-all-interactive-elements-are-keyboard-accessible">Ensure that all interactive elements are keyboard accessible</a></li>
-            <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#interaction">Keyboard access and visual focus</a></li>
-            <li><strong>User Story:</strong>
-              <ul>
-                <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#reporter">Mr. Jones, Reporter with repetitive stress injury</a></li>
-                <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#accountant">Ms. Laitinen, Accountant with blindness</a></li>
-                <li><a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#teenager">Ms. Kaseem, Teenager with deaf-blindness</a></li>
-              </ul>
-            </li>
-            <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=keyboard">Success Criteria relating to "keyboard"</a></li
-  >
-            <li><strong>Mobile:</strong> <a href="https://www.w3.org/WAI/mobile/experiences.html#mouse">Mouse required for interaction and navigation</a></li>
-            <li><strong>Tutorial:</strong> <a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> (several related topics)</li>
-          </ul>
-
-          <section aria-labelledby="more">
-          <h2 id="more">More Videos</h2>
-            <ul class="video-listing">
-              <li class="current">
-                <a href="keyboard.html">
-                  <span class="video-thumb" aria-label="Current: ">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Keyboard Compatibility
-                </a>
-              </li>
-              <li>
-                <a href="colors.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Colors with Good Contrast
-                </a>
-              </li>
-              <li>
-                <a href="layout.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Clear Layout and Design
-                </a>
-              </li>
-              <li>
-                <a href="speech.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Text to Speech
-                </a>
-              </li>
-              <li>
-                <a href="large.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Large Links, Buttons, and Controls
-                </a>
-              </li>
-              <li>
-                <a href="captions.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Video Captions
-                </a>
-              </li>
-              <li>
-                <a href="customizable.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Customizable Text
-                </a>
-              </li>
-              <li>
-                <a href="voice.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Voice Recognition
-                </a>
-              </li>
-              <li>
-                <a href="understandable.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Understandable Content
-                </a>
-              </li>
-              <li>
-                <a href="notifications.html">
-                  <span class="video-thumb">
-                    <img src="img/video-thumb-demo.jpg" alt="">
-                  </span>
-                  Notifications and Feedback
-                </a>
-              </li>
-            </ul>
-          </section>
-
-        <!-- </div>
-      </div> -->
-  <br />
-  <br />
-  <br />
-  		<aside class="side-box contribute" role="complementary">
-  		  <h2 class="heading">Help improve this page</h2>
-  		  <p>Please share your ideas, suggestions, or comments via email to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">wai-eo-editors@w3.org</a> or via GitHub.</p>
-  			<div class="buttons">
-  		  	<a class="btn" title="Publicly archived list" href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">E-mail</a>
-  		    <a class="btn"
-  href="https://github.com/w3c/wai-showcase-examples/edit/gh-pages/keyboard.html">Fork &amp; edit on GitHub</a>
-  		  	<a class="btn" href="https://github.com/w3c/wai-showcase-examples/issues/new?title=%5bPerspectives%20-%20Keyboard%5d">New GitHub Issue</a>
-  			</div>
-  		</aside>
+      <aside class="side-box contribute" role="complementary">
+      <h2 class="heading">Help improve this page</h2>
+      <p>Please share your ideas, suggestions, or comments via email to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">wai-eo-editors@w3.org</a> or via GitHub.</p>
+        <div class="buttons">
+          <a class="btn" title="Publicly archived list" href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">E-mail</a>
+          <a class="btn" href="https://github.com/w3c/wai-showcase-examples/edit/gh-pages/keyboard.html">Fork &amp; edit on GitHub</a>
+          <a class="btn" href="https://github.com/w3c/wai-showcase-examples/issues/new?title=%5bPerspectives%20-%20Keyboard%5d">New GitHub Issue</a>
+        </div>
+      </aside>
     </div>
   </main>
 
@@ -254,7 +165,7 @@
 		<div>
 			<h2><strong>Document Information</strong></h2>
 			<p>
-				<strong>Status:</strong> Unapproved draft.<br clear="none" />
+				<strong>Status:</strong> Published 17 May 2016. <br clear="none" />
 				<strong>Editor and project lead:</strong> <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>. Developed by the <a href="https://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a> with support from the <a href="https://www.w3.org/WAI/DEV/">WAI-DEV project</a>, co-funded by the European Commission. <a href="acknowledgements.html">Acknowledgements</a>.
 			</p>
 			<div class="footer-nav">
