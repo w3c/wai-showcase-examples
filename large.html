@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Large Links, Buttons, and Controls - Web Accessibility Perspectives</title>
+  <script src="lib/modernizr.custom.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
+  <link href="wai-style-changes.css" rel="stylesheet" type="text/css" />
+  <!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
+
+  <link href="lib/ableplayer.min.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="lib/jquery-1.12.3.min.js"></script> -->
+  <script src="lib/js.cookie.js"></script>
+  <script src="lib/ableplayer.min.js"></script>
+</head>
+<body class="editors-draft">
+  <header>
+    <div id="controls"><ul>
+      <li><a href="#skip"><img src="https://www.w3.org/Icons/downinpage.png" alt="" /> Skip to Content</a></li>
+      <li> | <a href="/WAI/changedesign">Change text size or colors</a></li>
+    </ul></div>
+
+    <div id="masthead"><p id="logos"><a href="/" title="W3C Home"><img alt="W3C logo" src="https://www.w3.org/Icons/w3c_home" /></a><a href="/WAI/" title="WAI Home"><img alt="Web Accessibility initiative" src="https://www.w3.org/WAI/images/wai-temp" /></a></p></div>
+
+    <div id="tagline"><p>WAI: Strategies, guidelines, resources to make the Web accessible to people with disabilities</p></div>
+  </header>
+
+  <nav id="nav">
+    <h2>Site Navigation</h2>
+    <p id="w3cnav"><a href="https://www.w3.org/">W3C Home</a></p>
+    <p id="subhomenav"><a href="/WAI/">Web Accessibility Initiative (WAI) Home</a></p>
+    <ol id="nav1" type="A">
+      <li class="current-nav"><a href="../gettingstarted/Overview.html" shape="rect">Getting Started</a>
+        <ul>
+          <li class="nav-head">Using the Web
+            <ol type="1">
+              <li><a href="../users/browsing.html" shape="rect">Better Web Browsing Tips</a></li>
+              <li><a href="../users/inaccessible.html" shape="rect">Contact Inaccessible Websites</a></li>
+            </ol>
+          </li>
+          <li class="current-nav nav-head">Accessibility Basics
+            <ol type="1">
+              <li><a href="/standards/webdesign/accessibility" shape="rect">Accessibility - W3C <img src="/Icons/tr.png" alt="W3C website" /></a></li>
+              <li><a shape="rect" href="accessibility.php">Introduction to Accessibility</a></li>
+              <li class="current-nav"><a href="Overview.html">Impact &amp; Benefits Videos</a>
+                <ul>
+                  <li><a href="keyboard.html">Keyboard</a></li>
+                  <li><a href="contrast.html">Contrast</a></li>
+                  <li><a href="layout.html">Layout</a></li>
+                  <li><a href="speech.html">Speech</a></li>
+                  <li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Controls</span></li>
+                  <li><a href="captions.html">Captions</a></li>
+                  <li><a href="customizable.html">Customizable</a></li>
+                  <li><a href="voice.html">Voice</a></li>
+                  <li><a href="understandable.html">Understandable</a></li>
+                  <li><a href="notifications.html">Notifications</a></li>
+                </ul>
+              </li>
+              <li><a href="components.php" shape="rect">Essential Components</a></li>
+              <li><a href="../bcase/Overview.html" shape="rect">Business Case</a></li>
+              <li><a href="/WAI/gettingstarted/tips/index.html">Tips for Getting Started</a></li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li><a href="../users/Overview.html" shape="rect">Designing for Inclusion</a></li>
+      <li><a href="../guid-tech.html" shape="rect">Guidelines &amp; Techniques</a></li>
+      <li><a href="../managing.html" shape="rect">Planning &amp; Implementing</a></li>
+      <li><a href="../eval/Overview.html" shape="rect">Evaluating Accessibility</a></li>
+      <li><a href="../train.html" shape="rect">Presentations &amp; Tutorials</a></li>
+      <li><a href="../about-links.html" shape="rect">Getting Involved with WAI</a></li>
+    </ol>
+    <div id="nav-static">
+      <div class="nav-discover">
+        <p><a href="https://www.w3.org/WAI/yourWAI" shape="rect"><strong><u>Discover new resources</u></strong> for people with disabilities, policy makers, managers, and you!</a></p>
+      </div>
+      <p class="translations"><a href="https://www.w3.org/WAI/wai-translations" shape="rect"><img src="https://www.w3.org/WAI/images/translations-med-1" alt="characters from different languages" /> Translations</a></p>
+    </div>
+  </nav>
+
+  <main id="main" role="main">
+    <div class="main-inner">
+      <div id="skipwrapper"><a id="skip" shape="rect" name="skip">-</a></div>
+
+      <h1 class="attach_permalink">Large Links, Buttons, and Controls <br />Web Accessibility Perspectives</h1>
+
+      <h2 id="intro" class="no-display">Introduction</h2>
+      <p>Web accessibility is essential for people with disabilities but useful for many more. Learn about some of the accessibility considerations and how they benefit everyone in different situations.</p>
+
+      <h2 id="film" class="no-display">Video on Large Links, Buttons, and Controls</h2>
+      <div class="video-container">
+        <video preload="metadata" poster="stills/large.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
+          <track src="vcaptions/large-en.vtt" label="English captions" kind="captions" srclang="en" default=""></track>
+          <track kind="descriptions" src="captions/large-desc-en.vtt" label="Audio Descriptions" srclang="en" />
+        </video>
+      </div>
+
+      <h2 id="what">What is Large Links, Buttons, and Controls?</h2>
+      <p>The area for clicking and tapping controls should be large enough for people to activate them. This includes links, buttons, checkboxes, and other controls. Small controls, or controls that are placed too closely to each other, are difficult to use by many people. This is particularly relevant on mobile devices with small screens.</p>
+
+      <h2 id="who">Who depends on this feature?</h2>
+      <ul>
+        <li>People with physical disabilities who have reduced dexterity;</li>
+        <li>People with chronical conditions, such as repetitive stress injuries (RSI), who need to avoid excessive movement.</li>
+      </ul>
+
+      <h2 id="others">What are the additional benefits?</h2>
+      <ul>
+        <li>Content is more usable on touch screens, especially on smaller mobile devices;</li>
+        <li>Content is more usable for everyone not used to the mouse or touch-pad on the computer they are using.</li>
+      </ul>
+
+      <h2 id="action">What needs to happen for this to work?</h2>
+      <p>Enlarging the size of the controls and activation areas around the controls brings improvement. Just increasing the font size of the control often isn't enough. Additionally, providing labels for controls, which is an accessibility requirement itself, often enlarges the activation area.</p>
+
+      <h2 id="resources">Learn more</h2>
+      <ul>
+        <li><strong>Accessibility Principle:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/principles#navigable">Users can easily navigate, find content, and determine where they are</a></li>
+        <li><strong>Getting Started:</strong>
+          <ul>
+            <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</a></li>
+            <li><a href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#ensure-that-form-elements-include-clearly-associated-labels">Ensure that form elements include clearly associated labels</a></li>
+          </ul>
+        </li>
+        <li><strong>Easy Check:</strong> <a href="https://www.w3.org/WAI/eval/preliminary.html#forms">Forms, labels, and errors</a></li>
+        <li><strong>User Story:</strong> <a href="https://www.w3.org/WAI/intro/people-use-web/stories.html#retiree">Mr. Yunus, Retiree with low vision, hand tremor, and mild short-term memory loss</a></li>
+        <li><strong>WCAG 2.0:</strong> <a href="https://www.w3.org/WAI/WCAG20/quickref/?tags=labels">Success Criteria relating to "labels"</a></li>
+      </ul>
+
+      <section aria-labelledby="more">
+        <h2 id="more">Impact &amp; Benefits Videos</h2>
+        <ul class="video-listing">
+          <li><a href="keyboard.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Keyboard Compatibility</a></li>
+          <li><a href="contrast.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Colors with Good Contrast</a></li>
+          <li><a href="layout.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Clear Layout and Design</a></li>
+          <li><a href="speech.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Text to Speech</a></li>
+          <li class="current"><a><span class="video-thumb" aria-label="Current: "><img src="img/video-thumb-demo.jpg" alt=""></span> Large Links, Buttons, and Controls</a></li>
+          <li><a href="captions.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Video Captions</a></li>
+          <li><a href="customizable.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Customizable Text</a></li>
+          <li><a href="voice.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Voice Recognition</a></li>
+          <li><a href="understandable.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Understandable Content</a></li>
+          <li><a href="notifications.html"><span class="video-thumb"><img src="img/video-thumb-demo.jpg" alt=""></span> Notifications and Feedback</a></li>
+        </ul>
+      </section>
+
+      <aside class="side-box contribute" role="complementary">
+        <h2 class="heading">Help improve this page</h2>
+        <p>Please share your ideas, suggestions, or comments via email to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Keyboard%5d">wai-eo-editors@w3.org</a> or via GitHub.</p>
+        <div class="buttons">
+          <a class="btn" title="Publicly archived list" href="mailto:wai-eo-editors@w3.org?subject=%5bPerspectives%20-%20Large%5d">E-mail</a>
+          <a class="btn" href="https://github.com/w3c/wai-showcase-examples/edit/gh-pages/large.html">Fork &amp; edit on GitHub</a>
+          <a class="btn" href="https://github.com/w3c/wai-showcase-examples/issues/new?title=%5bPerspectives%20-%20Large%5d">New GitHub Issue</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="footer" role="contentinfo">
+    <div>
+      <h2><strong>Document Information</strong></h2>
+      <p><strong>Status:</strong> Updated 6 May 2016. <br clear="none" /><strong>Editor and project lead:</strong> <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>. Developed by the <a href="https://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a> with support from the <a href="https://www.w3.org/WAI/DEV/">WAI-DEV project</a>, co-funded by the European Commission. <a href="acknowledgements.html">Acknowledgements</a>.</p>
+      <div class="footer-nav">
+        <p>[<a href="https://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="https://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="https://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="/WAI/contacts" shape="rect">Contacting WAI</a>] <br clear="none" /><strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#xA9; 2016 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="lib/sharebox.js"></script>
+</body>
+</html>
