@@ -286,67 +286,8 @@ video {
   clear:right;
 }
 
-.video-container + p {
-  clear: both;
-  max-width: 34.285714286em;
-}
-
-.video-container + p + ul {
-  margin-left: 0;
-  padding-left: 0;
-  max-width: 34.285714286em;
-}
-
-.video-container + p + ul > li {
-  list-style:none;
-}
-
-
-/* ex-col jumping with hover/focus temp fix. Ideally this should be incorporated
-  into /WAI/style/excol.css to address this issue throughout the site */
-.f_panelHead {
-  border-bottom: solid #fffaf5;
-  padding-left: 1.6em;
-  position: relative;
-}
-.f_panelHead.fs_hover, .f_panelHead.fs_focus {
-  border-bottom: solid #993300;
-}
-.f_panelHead.fs_selected {
-  border-bottom: solid #993300;
-}
-.f_expanderWrapper {
-  float: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.f_panelHead {
-  display:block;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  font-weight: bold;
-}
-
-.f_panelHead + *, .f_panelHead + * ~ * {
-  margin: 0 0 5px 30px;
-}
-
-.f_panelHead + ul {
-  padding-left: 20px;
-}
-
-.f_panelHead + ul li {
-  margin-bottom: 5px;
-}
-
-.f_panelHead + * {
-  margin-top: 10px;
-}
-
-.f_panelHead + *:last-child, .f_panelHead + * ~ *:last-child {
-  margin-bottom: 10px;
+.video-container + * {
+  clear: both !important;
 }
 
 /* Video List */
@@ -399,3 +340,17 @@ a:focus .video-thumb:before {
   background-image: url(img/play.svg);
   background-size: 100% 100%;
 }
+
+#what {
+  float: initial;
+  margin: initial;
+  padding: initial;
+  width: initial;
+  line-height: initial;
+  background: initial;
+  border: initial;
+  border-top: initial;
+  color: #930;
+  border-bottom: 1px dashed #930;
+}
+
