@@ -314,15 +314,23 @@ video {
   }
 }
 
-.video-listing a {
+.video-listing a,
+.video-listing .current {
   display:flex;
   overflow: hidden;
   align-items: center;
   padding: 5px;
-  margin-right: 10px;
   border: 1px solid transparent;
-  width:100%;
   box-sizing: border-box;
+}
+
+.video-listing a {
+  width:100%;
+  margin-right: 10px;
+}
+
+.video-listing .current {
+  font-weight: bold;
 }
 
 .video-listing a:hover,
@@ -362,6 +370,11 @@ a:focus .video-thumb:before {
   content: '';
   background-image: url(img/play.svg);
   background-size: 100% 100%;
+  opacity: .7;
+}
+
+.current .video-thumb:before {
+  opacity: 1;
 }
 
 #what {
