@@ -390,3 +390,20 @@ a:focus .video-thumb:before {
   border-bottom: 1px dashed #930;
 }
 
+#adbutton {
+  color: #fff;
+  background-color: #464646;
+  border-color: #262626;
+  padding: 1px 2px;
+}
+
+#adbutton img {
+  height: 2em;
+  vertical-align: middle;
+  margin-right: .25em;
+  pointer-events: none;
+}
+
+#adbutton span {
+  pointer-events: none;
+}

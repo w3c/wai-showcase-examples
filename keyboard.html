@@ -106,10 +106,15 @@
       <p>Web accessibility is essential for people with disabilities and useful for all. Learn about the impact of accessibility and the benefits for everyone in a variety of situations.</p>
 
       <h2 id="film" class="no-display">Video on Keyboard Compatibility</h2>
-      <div class="video-container">
-        <video preload="metadata" poster="img/keyboard.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
-          <track src="cc/keyboard-en.vtt" label="English captions" kind="captions" srclang="en" default="" />
-          <track src="cc/keyboard-desc-en.vtt" label="English audio descriptions" kind="descriptions" srclang="en" />
+      <button id="adbutton"> <img src="img/audio-description.svg" alt=""><span>Enable Audio Description</span></button>
+      <div class="video-container" data-video-type="">
+        <video preload="metadata" poster="img/keyboard.jpg" data-able-player data-youtube-id="YOUTUBEID">
+          <track src="cc/keyboard-en.vtt" label="English" kind="captions" srclang="en" default="" />
+        </video>
+      </div>
+      <div class="video-container" data-video-type="audio-described">
+        <video preload="metadata" poster="img/keyboard.jpg" data-able-player data-youtube-id="YOUTUBEID-AD">
+          <track src="cc/keyboard-AD.vtt" label="English" kind="captions" srclang="en" />
         </video>
       </div>
       <p>[ <strong>Previous:</strong> <em>none</em> | <a href="Overview.html">Up: Overview</a> | <a href="contrast.html"><strong>Next:</strong> Colors with Good Contrast</a> ]</p>
@@ -236,5 +241,6 @@ style="border:0;" alt="" /></p></noscript>
   </footer>
 
 <script src="lib/sharebox.js"></script>
+<script src="lib/adbutton.js"></script>
 </body>
 </html>
