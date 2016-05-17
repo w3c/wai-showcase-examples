@@ -106,12 +106,19 @@
       <p>Web accessibility is essential for people with disabilities and useful for all. Learn about the impact of accessibility and the benefits for everyone in a variety of situations.</p>
 
       <h2 id="film" class="no-display">Video on Video Captions</h2>
-      <div class="video-container">
-        <video preload="metadata" poster="img/captions.jpg" data-able-player data-youtube-id="YOUTUBEID" data-youtube-desc-id="YOUTUBEID-AD">
+      <div class="video-container" data-video-type="">
+        <video preload="metadata" poster="img/captions.jpg" data-able-player data-youtube-id="YOUTUBEID">
           <track src="cc/captions-en.vtt" label="English captions" kind="captions" srclang="en" default="" />
           <track src="cc/captions-desc-en.vtt" label="English audio descriptions" kind="descriptions" srclang="en" />
         </video>
       </div>
+      <div class="video-container" data-video-type="audio-described">
+        <video preload="metadata" poster="img/captions.jpg" data-able-player data-youtube-id="YOUTUBEID">
+          <track src="cc/captions-en.vtt" label="English captions" kind="captions" srclang="en" default="" />
+          <track src="cc/captions-desc-en.vtt" label="English audio descriptions" kind="descriptions" srclang="en" />
+        </video>
+      </div>
+      <p><button id="adbutton"> <img src="img/audio-description.svg" alt=""><span>Enable Audio Description</span></button></p>
       <p>[ <a href="controls.html"><strong>Previous:</strong> Large Links, Buttons, and Controls</a> | <a href="Overview.html">Up: Overview</a> | <a href="customizable.html"><strong>Next:</strong> Customizable Text</a> ]</p>
 
       <h2 id="what">What is Video Captions?</h2>
