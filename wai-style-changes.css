@@ -290,6 +290,15 @@ video {
   clear: both !important;
 }
 
+.video-container iframe,
+.video-container .able-wrapper {
+  max-width: 450px !important;
+}
+
+.video-container .able {
+  box-shadow: none;
+}
+
 /* Video List */
 
 .video-listing {
