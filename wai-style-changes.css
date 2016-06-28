@@ -399,20 +399,20 @@ a:focus .video-thumb:before {
   border-bottom: 1px dashed #930;
 }
 
-#adbutton {
+#audio_description_button {
   color: #fff;
   background-color: #464646;
   border-color: #262626;
   padding: 1px 2px;
 }
 
-#adbutton img {
+#audio_description_button img {
   height: 2em;
   vertical-align: middle;
   margin-right: .25em;
   pointer-events: none;
 }
 
-#adbutton span {
+#audio_description_button span {
   pointer-events: none;
 }
