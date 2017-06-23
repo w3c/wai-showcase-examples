@@ -284,15 +284,24 @@ video {
 
 .video-container {
   clear:right;
+  max-width: 450px !important;
 }
 
 .video-container + * {
   clear: both !important;
 }
-
-.video-container iframe,
-.video-container .able-wrapper {
-  max-width: 450px !important;
+.able-media-container {
+  padding-top: 56.25%;
+  position: relative;
+}
+.able-media-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-container .able {
