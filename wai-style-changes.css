@@ -294,6 +294,26 @@ video {
   padding-top: 56.25%;
   position: relative;
 }
+
+:-webkit-full-screen .able-media-container {
+  padding-top: 0;
+  position: static;
+}
+
+:-moz-full-screen .able-media-container {
+  padding-top: 0;
+  position: static;
+}
+
+:-ms-fullscreen .able-media-container {
+  padding-top: 0;
+  position: static;
+}
+
+:fullscreen .able-media-container {
+  padding-top: 0;
+  position: static;
+}
 .able-media-container iframe {
   position: absolute;
   top: 0;
@@ -302,6 +322,22 @@ video {
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+:-webkit-full-screen .able{
+margin: 0;
+}
+
+:-moz-full-screen .able{
+margin: 0;
+}
+
+:-ms-fullscreen .able{
+margin: 0;
+}
+
+:fullscreen .able{
+margin: 0;
 }
 
 .video-container .able {
