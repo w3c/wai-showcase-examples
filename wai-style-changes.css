@@ -432,16 +432,16 @@ a:focus .video-thumb:before {
 }
 
 #what {
-  float: initial;
-  margin: initial;
-  padding: initial;
-  width: initial;
-  line-height: initial;
-  background: initial;
-  border: initial;
-  border-top: initial;
-  color: #930;
-  border-bottom: 1px dashed #930;
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  line-height: 135%;
+  background: rgb(255,250,245);
+  border: none !important;
+  border-top: none !important;
+  color: #930 !important;
+  border-bottom: 1px dashed #930 !important;
 }
 
 #audio_description_button {
