@@ -1,16 +1,8 @@
 ---
 title: Large Links, Buttons, and Controls
 order: 5
-date: 2016-09-15
-people:
-  editorslabel: "Editor and project lead"
-  editors:
-    - name: Shadi Abou-Zahra
-      url: https://www.w3.org/People/shadi
-  contributors:
-support:
-  - name: WAI-DEV project, co-fundend by the European Commision
-    url: https://www.w3.org/WAI/DEV/
+footer: >
+  <p><strong>Status:</strong> Updated 15 September 2016. <br><strong>Editor and project lead:</strong> <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>. Developed by the <a href="https://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a> with support from the <a href="https://www.w3.org/WAI/DEV/">WAI-DEV project</a>, co-funded by the European Commission. <a href="acknowledgements">Acknowledgements</a>.</p>
 ---
 
 Web accessibility is essential for people with disabilities and useful
